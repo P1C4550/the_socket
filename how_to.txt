@@ -8,7 +8,7 @@ git commit -m "message"
 
 git remote add origin https://github.com/P48L0-P1C4550/the_socket.git
 
-git push -u origin master
+git push origin master
 
 git clone https://github.com/P48L0-P1C4550/the_socket.git
 
