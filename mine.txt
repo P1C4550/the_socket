@@ -7,3 +7,10 @@ git config --global user.email "pawel.herok@gmail.com"
 git config --global user.name pawel
 git remote add origin https://github.com/P48L0-P1C4550/the_socket.git
 rundll32.exe keymgr.dll, KRShowKeyMgr
+
+git config --unset user.name
+git config --unset user.email
+
+git credential-manager erase
+
+git credential-manager github list
