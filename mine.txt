@@ -5,3 +5,4 @@ git config --global --unset-all
 # log me in
 git config --global user.email "pawel.herok@gmail.com"
 git config --global user.name pawel
+git remote add origin https://github.com/P48L0-P1C4550/the_socket.git
