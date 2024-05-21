@@ -24,3 +24,5 @@ git checkout new-branch-name	#switch
 
 git checkout master		#change before merging to master
 git merge new-branch-name	#merge to the one ur in
+
+git log --oneline
