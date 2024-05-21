@@ -1,7 +1,8 @@
 # install
 winget install --id Git.Git -e --source winget
-# log me out
-git config --global --unset-all
+
+## ?? ## git config --global --unset-all
+
 # log me in
 git config --global user.email "pawel.herok@gmail.com"
 git config --global user.name pawel
