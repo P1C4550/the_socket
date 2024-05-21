@@ -11,6 +11,8 @@ rundll32.exe keymgr.dll, KRShowKeyMgr
 git config --unset user.name
 git config --unset user.email
 
-git credential-manager erase
+## NOT WROKIE PROBABLY ## git credential-manager erase
+
+cmdkey /delete:git:https://github.com
 
 git credential-manager github list
