@@ -22,10 +22,8 @@ class Server:
         client_ip, client_port  = client_socket.getsockname())
         s.communicators.append(Communicator(client_socket, s.lock, client_ip, client_port))
 
-messages = []
-encoding = "utf-8"
-
-communicators = []
+    def send_loop():
+        pass
 
 def id_generator():
     n = 0
@@ -33,12 +31,12 @@ def id_generator():
         yield n
         n += 1
 
-id_gen = id_generator()
+messages = []
+encoding = "utf-8"
 
-def always_listen(server_s):
-    client_socket, client_address = server_s.accept()
-    client_ip, client_port  = client_socket.getsockname())
-    communicators.append(Communicator(client_socket, lock, client_ip, client_port))
+communicators = []
+
+id_gen = id_generator()
 
 listener_t = threading.Thread(target=always_listen, args=(server_s,))
 listener_t.start()
